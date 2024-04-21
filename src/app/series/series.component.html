@@ -1,0 +1,24 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Chanel</th>
+      <th scope="col">Seasons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let current of series">
+      <th scope="row">{{current.id}}</th>
+      <td>{{current.name}}</td>
+      <td>{{current.channel}}</td>
+      <td>{{current.seasons}}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4">Seasons average: {{getSeasonsAverage()}}</td>
+    </tr>
+  </tfoot>
+
+</table>
